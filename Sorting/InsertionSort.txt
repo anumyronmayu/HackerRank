@@ -1,0 +1,27 @@
+public static void insertionSortPart2(int[] ar) {
+
+		for (int j = 1; j < ar.length; j++) {
+
+			int indexOfLast = j;
+
+			int V = ar[indexOfLast];
+
+			int i = indexOfLast - 1;
+
+			while (i > -1 && ar[i] > V) {
+
+				ar[i + 1] = ar[i];
+
+				i--;
+
+			}//while
+
+			ar[i + 1] = V;
+
+		}//for
+
+	}//function
+
+
+
+How to use: insertIntoSorted(ar);
