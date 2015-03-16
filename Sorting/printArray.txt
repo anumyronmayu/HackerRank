@@ -1,0 +1,6 @@
+public static void printArray(int[] ar) {
+		for (int n : ar) {
+			System.out.print(n + " ");
+		}
+		System.out.println("");
+	}

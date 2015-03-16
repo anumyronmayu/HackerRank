@@ -1,0 +1,27 @@
+public static void partition(int[] ar) {
+
+		int pivot = 0;
+
+		int selection = 1;
+
+		while (selection <= ar.length - 1) {
+			if (ar[selection] >= ar[pivot]) {
+				selection++;
+			} else {
+				int temp = ar[selection];
+				for (int i = selection; i >= pivot + 1; i--) {
+					ar[i] = ar[i - 1];
+				}
+
+				ar[pivot] = temp;
+
+				pivot++;
+
+				selection++;
+
+			}
+		}
+
+		printArray(ar);
+
+	}
